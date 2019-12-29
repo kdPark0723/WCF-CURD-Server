@@ -14,6 +14,7 @@ namespace WCF_Server
     public partial class Form1 : Form
     {
         ServiceHost host;
+        bool isStart = false;
 
         public Form1()
         {
@@ -30,6 +31,9 @@ namespace WCF_Server
 
         private void ServerStartButton_Click(object sender, EventArgs e)
         {
+            if (isStart)
+                return;
+
             string address = "net.tcp://localhost:8080/wcf";
 
             NetTcpBinding binding = new NetTcpBinding();
@@ -40,13 +44,20 @@ namespace WCF_Server
             host.Open();
 
             this.statText.Text = "Server Start";
+
+            isStart = true;
         }
 
         private void ServerStopButton_Click(object sender, EventArgs e)
         {
+            if (!isStart)
+                return;
+
             host.Close();
 
             this.statText.Text = "Server Stop";
+
+            isStart = false;
         }
     }
 }
