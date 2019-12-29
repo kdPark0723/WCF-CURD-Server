@@ -24,12 +24,13 @@ namespace WCF_Server
             GetDatabaseConnectionInfoForm getDatabaseConnectionInfoForm = new GetDatabaseConnectionInfoForm(connectionInfo);
             getDatabaseConnectionInfoForm.ShowDialog();
 
-            DataAccessor.currentConnection = connectionInfo;
+            DataAccessor.connectionInfo = connectionInfo;
+            DataAccessor.Init();
         }
 
         private void ServerStartButton_Click(object sender, EventArgs e)
         {
-            string address = "net.tcp://localhost:8080/mcf";
+            string address = "net.tcp://localhost:8080/wcf";
 
             NetTcpBinding binding = new NetTcpBinding();
 

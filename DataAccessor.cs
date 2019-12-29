@@ -6,19 +6,15 @@ namespace WCF_Server
 {
     public class DataAccessor : IDataAccessor
     {
-        static public DatabaseConnectionInfo currentConnection;
+        static public DatabaseConnectionInfo connectionInfo;
+        static public MySqlConnection connection;
 
-        DatabaseConnectionInfo connectionInfo;
-        MySqlConnection connection;
-
-        public DataAccessor() : this(currentConnection)
+        public DataAccessor()
         {
         }
 
-        public DataAccessor(DatabaseConnectionInfo connectionInfo)
+        static public void Init()
         {
-            this.connectionInfo = connectionInfo;
-
             string connctionString = connectionInfo.GetConnectionInfo();
             connection = new MySqlConnection(connctionString);
             try
