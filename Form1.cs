@@ -29,19 +29,13 @@ namespace WCF_Server
 
         private void ServerStartButton_Click(object sender, EventArgs e)
         {
-            // Address 
-            string address = "net.tcp://localhost:8080/myAddress";
+            string address = "net.tcp://localhost:8080/mcf";
 
-            // Binding : TCP 사용
             NetTcpBinding binding = new NetTcpBinding();
 
-            // Service Host 만들기
             host = new ServiceHost(typeof(DataAccessor));
-
-            // End Point 추가
             host.AddServiceEndpoint(typeof(IDataAccessor), binding, address);
 
-            // Service Host 시작
             host.Open();
 
             this.statText.Text = "Server Start";
