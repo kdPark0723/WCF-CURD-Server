@@ -1,0 +1,17 @@
+D:\Project\WCF Server\bin\Debug\WCF Server.exe.config
+D:\Project\WCF Server\bin\Debug\WCF Server.exe
+D:\Project\WCF Server\bin\Debug\WCF Server.pdb
+D:\Project\WCF Server\obj\Debug\WCF Server.csprojAssemblyReference.cache
+D:\Project\WCF Server\obj\Debug\WCF_Server.Form1.resources
+D:\Project\WCF Server\obj\Debug\WCF_Server.Properties.Resources.resources
+D:\Project\WCF Server\obj\Debug\WCF Server.csproj.GenerateResource.cache
+D:\Project\WCF Server\obj\Debug\WCF Server.csproj.CoreCompileInputs.cache
+D:\Project\WCF Server\obj\Debug\WCF Server.exe
+D:\Project\WCF Server\obj\Debug\WCF Server.pdb
+D:\Project\WCF Server\bin\Debug\MySql.Data.dll
+D:\Project\WCF Server\bin\Debug\Google.Protobuf.dll
+D:\Project\WCF Server\bin\Debug\BouncyCastle.Crypto.dll
+D:\Project\WCF Server\bin\Debug\Renci.SshNet.dll
+D:\Project\WCF Server\bin\Debug\MySql.Data.xml
+D:\Project\WCF Server\obj\Debug\WCF Server.csproj.CopyComplete
+D:\Project\WCF Server\obj\Debug\WCF_Server.GetDatabaseConnectionInfoForm.resources
